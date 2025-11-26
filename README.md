@@ -18,4 +18,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh   # Windows 用 install.ps1
 # ② 直接跑（uv 会自动建虚拟环境、装依赖）
 uv run python main.py
 
+# 打包
+uv run pyinstaller -F main.py -n chat-cli
+
 ```
