@@ -13,5 +13,5 @@ wheels/
 .env
 
 # 日志
-chat_history
+chat_history.json
 

@@ -22,7 +22,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='chat-cli',
+    name='chatcli',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

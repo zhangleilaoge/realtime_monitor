@@ -1,6 +1,7 @@
 import sys
 from .storage import load_history, save_history
 from .client import stream_chat
+from prompt_toolkit import prompt   # 替代内置 input
 
 COMMANDS = {"/q", "/quit", "/exit", "/clear"}
 
@@ -17,7 +18,7 @@ def cli_loop():
     print("💬 多轮对话 CLI（/q 退出，/clear 清屏）")
     while True:
         try:
-            user = input("\n👤 你：").strip()
+            user = prompt("\n👤 你：").strip()   # Backspace / 方向键都正常
         except (KeyboardInterrupt, EOFError):
             print("\n👋 再见！")
             break
